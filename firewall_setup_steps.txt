@@ -1,0 +1,18 @@
+# Windows Firewall Setup Task
+
+## Steps Performed
+1. Opened Windows Defender Firewall (wf.msc).
+2. Viewed current inbound and outbound rules.
+3. Created a new rule to block inbound traffic on TCP port 23 (Telnet).
+4. Tested using telnet localhost 23 — confirmed block.
+5. Optionally allowed SSH (Port 22).
+6. Deleted test rule and restored default state.
+
+## Screenshots
+- Screenshot_1: Firewall rules list.
+- Screenshot_2: Block Telnet rule created.
+- Screenshot_3: Telnet blocked test result.
+
+## Summary
+Firewalls filter traffic based on rules — inbound rules manage incoming connections, outbound manage outgoing.  
+Blocking unused ports like Telnet (23) prevents unauthorized access and strengthens security.
